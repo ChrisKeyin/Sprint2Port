@@ -1,68 +1,187 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+body.index-page {/*Style for background image on index page*/
+  background-image: url('Pics/Background.jpg');
+  background-size: cover;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content:center; 
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+}
+.indexBody {/*Style for basic page orientation*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body.works-page {/*Style for background image on works page*/
+  background-image: url('Pics/Background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.indexBox1 {/*Style for the first box*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 800px;
+  background: linear-gradient(rgb(117, 117, 117), rgb(255, 255, 255));
+  border-radius: 10px;
+  border: 2px solid black;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.indexBox2 {/*Style for the second box*/
+  display:flex;
+  width: 600px;
+  height: 800px;
+  border-radius: 3px, black;
+  background-color: rgb(117, 117, 117);
+  border-radius: 10px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexPicBox {/*Style for the picture box*/
+  width: 500px;
+  height: 416px;
+  background-color: rgb(0, 0, 0);
+  border: 10px solid black;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.indexPicBox2 {/*Style for the second picture box*/
+  width: 500px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  border: 10px solid black;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+h1.index {/*Style for the h1 on the index page*/
+  font-family: sans-serif;
+  margin-right: 600px;
+  margin-bottom: 400px;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 250px;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+h1.works {/*Style for the h1 on the works page*/
+  background-color: rgb(117, 117, 117);
+  font-family: Impact, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  width: 1160px;
+  height: 50px;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+.navBox-index {/*Style for navbox on the index page*/
+  background-color: rgb(117, 117, 117);
+  display: flex;
+  width: 1160px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 36px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: impact, sans-serif;
+}
+
+.worksBody {/*Style for the body of the works page*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.worksBox {/*Style for the box on the works page*/
+  background-color: rgb(117, 117, 117);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 1800px;
+  height: 1000px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.worksPicBox1, .worksPicBox2, .worksPicBox3, .worksPicBox4 {/*Style for picture boxes on the works page*/
+  width: 820px;
+  height: 420px;
+  background-color: rgb(255, 255, 255);
+  border: 10px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.worksPicBox1 img, .worksPicBox2 img, .worksPicBox3 img, .worksPicBox4 img {/*Style for the pictures in the work boxes*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.navBox-works {/*Style for the navbox on the works page*/
+  background-color: rgb(117, 117, 117);
+  display: flex;
+  width: 1160px;
+  height: 50px;
+  font-size: 36px;
+  justify-content: center;
+  text-align: center;
+  font-family: impact, sans-serif;
+}
+
+a:visited {/*Style for visited links*/
+  color: #000000;
+}
+
+a:link {/*Style for un-used links*/
+  color:#000000;
+}
+
+a:hover {/*Style for link that you are hovering over*/
+  color:white;
+}
+
+.popup {/*Style for the popups*/
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-img {/*Style for the pictures in the popups*/
+  max-width: 90%;
+  max-height: 90%;
+  width: 1600px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 5px solid rgb(0, 0, 0);
 }
