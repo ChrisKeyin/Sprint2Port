@@ -1,5 +1,5 @@
 body.index-page {/*Style for background image on index page*/
-  background-image: url('Pics/Background.jpg');
+  background-image: url('/Pics/Background.jpg');
   background-size: cover;
   display: flex;
   justify-content:center; 
@@ -15,7 +15,7 @@ body.index-page {/*Style for background image on index page*/
 }
 
 body.works-page {/*Style for background image on works page*/
-  background-image: url('Pics/Background.jpg');
+  background-image: url('/Pics/Background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -28,10 +28,9 @@ body.works-page {/*Style for background image on works page*/
   align-items: center;
   width: 600px;
   height: 800px;
-  background: linear-gradient(rgb(117, 117, 117), rgb(255, 255, 255));
+  background: linear-gradient(rgb(92, 24, 24), rgb(90, 62, 62));
   border-radius: 10px;
   border: 2px solid black;
-
 }
 
 .indexBox2 {/*Style for the second box*/
@@ -39,7 +38,7 @@ body.works-page {/*Style for background image on works page*/
   width: 600px;
   height: 800px;
   border-radius: 3px, black;
-  background-color: rgb(117, 117, 117);
+  background-color: rgb(75, 75, 75);
   border-radius: 10px;
   border: 2px solid black;
   justify-content: center;
@@ -57,13 +56,14 @@ body.works-page {/*Style for background image on works page*/
 }
 
 .indexPicBox2 {/*Style for the second picture box*/
-  width: 500px;
-  height: 250px;
+  width: 300px;
+  height: 400px;
   background-color: rgb(255, 255, 255);
   border: 10px solid black;
   justify-content: center;
   flex-direction: column;
   align-self: center;
+  margin-bottom: 100px;
 }
 
 h1.index {/*Style for the h1 on the index page*/
@@ -76,31 +76,33 @@ h1.index {/*Style for the h1 on the index page*/
   margin-bottom: 250px;
   font-family: sans-serif;
   text-decoration: underline;
+  margin-bottom: 100px;
 }
 
 h1.works {/*Style for the h1 on the works page*/
-  background-color: rgb(117, 117, 117);
+  background-color: rgb(75, 75, 75);
   font-family: Impact, sans-serif;
   font-size: 35px;
   text-align: center;
-  width: 1160px;
+  width: 600px;
   height: 50px;
   font-family: sans-serif;
   text-decoration: underline;
+  border-radius: 10px;
 }
 
 .navBox-index {/*Style for navbox on the index page*/
-  background-color: rgb(117, 117, 117);
+  background-color: rgb(75, 75, 75);
   display: flex;
-  width: 1160px;
+  width: 600px;
   height: 50px;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin: 20px auto;
   font-size: 36px;
   justify-content: center;
   text-align: center;
   padding: 10px;
   font-family: impact, sans-serif;
+  border-radius: 10px;
 }
 
 .worksBody {/*Style for the body of the works page*/
@@ -112,7 +114,7 @@ h1.works {/*Style for the h1 on the works page*/
 }
 
 .worksBox {/*Style for the box on the works page*/
-  background-color: rgb(117, 117, 117);
+  background-color: rgb(75, 75, 75);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -142,14 +144,16 @@ h1.works {/*Style for the h1 on the works page*/
 }
 
 .navBox-works {/*Style for the navbox on the works page*/
-  background-color: rgb(117, 117, 117);
+  background-color: rgb(75, 75, 75);
   display: flex;
-  width: 1160px;
+  width: 600px;
   height: 50px;
   font-size: 36px;
   justify-content: center;
   text-align: center;
   font-family: impact, sans-serif;
+  border-radius: 10px;
+
 }
 
 a:visited {/*Style for visited links*/
